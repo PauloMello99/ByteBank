@@ -1,6 +1,8 @@
 # ByteBank
 
-A simple app created in order to study Flutter.
+An simple app made using Flutter during classes on Alura platform (Flutter Formation)
+
+Um aplicativo simples feito usando Flutter durante as aulas na plataforma Alura (Flutter Formation)
 
 ## Getting Started
 
