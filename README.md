@@ -1,6 +1,6 @@
 # ByteBank
 
-A new Flutter project.
+A simple app created in order to study Flutter.
 
 ## Getting Started
 
