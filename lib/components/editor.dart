@@ -5,14 +5,16 @@ class Editor extends StatelessWidget {
   final String rotulo;
   final String dica;
   final IconData icone;
+  final TextInputType tipoTeclado;
 
-  Editor({this.controlador, this.rotulo, this.dica, this.icone});
+  Editor(
+      {this.controlador, this.rotulo, this.dica, this.icone, this.tipoTeclado});
 
   @override
   Widget build(BuildContext context) {
     return TextField(
       controller: controlador,
-      keyboardType: TextInputType.number,
+      keyboardType: tipoTeclado,
       style: TextStyle(fontSize: 16),
       decoration: InputDecoration(
           labelText: rotulo,

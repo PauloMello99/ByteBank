@@ -11,7 +11,7 @@ const _textoBotaoConfirmar = 'Confirmar';
 
 class FormularioTransferencia extends StatelessWidget {
   final TextEditingController _controladorCampoNumeroConta =
-  TextEditingController();
+      TextEditingController();
   final TextEditingController _controladorCampoValor = TextEditingController();
 
   @override
@@ -23,14 +23,18 @@ class FormularioTransferencia extends StatelessWidget {
         child: Column(
           children: [
             Editor(
-                controlador: _controladorCampoNumeroConta,
-                rotulo: _rotuloNumeroConta,
-                dica: _dicaNumeroConta),
+              controlador: _controladorCampoNumeroConta,
+              rotulo: _rotuloNumeroConta,
+              dica: _dicaNumeroConta,
+              tipoTeclado: TextInputType.number,
+            ),
             Editor(
-                controlador: _controladorCampoValor,
-                rotulo: _rotuloValor,
-                dica: _dicaValor,
-                icone: Icons.monetization_on),
+              controlador: _controladorCampoValor,
+              rotulo: _rotuloValor,
+              dica: _dicaValor,
+              icone: Icons.monetization_on,
+              tipoTeclado: TextInputType.number,
+            ),
             RaisedButton(
                 child: Text(_textoBotaoConfirmar),
                 onPressed: () => criarTransferencia(context))

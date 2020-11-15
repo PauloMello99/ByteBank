@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ByteBank/screens/transferencia/lista.dart';
+import 'package:ByteBank/screens/dashboard/dashboard.dart';
 
 void main() => runApp(ByteBankApp());
 
@@ -7,7 +7,7 @@ class ByteBankApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ListaTransferencias(),
+      home: Dashboard(),
       theme: ThemeData(
         primaryColor: Colors.green[900],
         accentColor: Colors.blueAccent[700],
@@ -18,5 +18,3 @@ class ByteBankApp extends StatelessWidget {
     );
   }
 }
-
-
