@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:ByteBank/models/transferencia.dart';
 import 'package:ByteBank/screens/transferencia/formulario.dart';
+import 'package:flutter/material.dart';
 
 const _tituloAppBar = 'Transferências';
 

@@ -1,13 +1,16 @@
-import 'package:ByteBank/database/app_database.dart';
+import 'package:ByteBank/dao/contato_dao.dart';
 import 'package:ByteBank/models/contato.dart';
-import 'package:flutter/material.dart';
 import 'package:ByteBank/screens/contatos/formulario.dart';
+import 'package:flutter/material.dart';
 
 const _tituloAppBar = 'Contatos';
 const _textCarregando = 'Carregando ...';
 const _textoErro = 'Erro inesperado, tente novamente.';
 
 class ListaContatos extends StatelessWidget {
+
+  final ContatoDAO dao = ContatoDAO();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +24,7 @@ class ListaContatos extends StatelessWidget {
       body: FutureBuilder<List<Contato>>(
         initialData: List(),
         future:
-            Future.delayed(Duration(seconds: 2)).then((v) => listarContatos()),
+            Future.delayed(Duration(seconds: 2)).then((v) => dao.listarContatos()),
         builder: _renderizarLista,
       ),
     );

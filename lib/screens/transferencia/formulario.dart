@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:ByteBank/components/editor.dart';
 import 'package:ByteBank/models/transferencia.dart';
+import 'package:flutter/material.dart';
 
 const _tituloAppBar = 'Criando Transferência';
 const _rotuloNumeroConta = 'Número da conta';

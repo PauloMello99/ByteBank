@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:ByteBank/screens/transferencia/lista.dart';
 import 'package:ByteBank/screens/contatos/lista.dart';
+import 'package:ByteBank/screens/transferencia/lista.dart';
+import 'package:flutter/material.dart';
 
 const _tituloAppBar = 'Dashboard';
 const _imgSrc = 'images/bytebank_logo.png';
